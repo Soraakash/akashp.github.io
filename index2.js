@@ -21,7 +21,7 @@ localStorage.setItem('myCat',darkmode);
 
 if(localStorage.getItem('myCat') == 'black')
 {
-  icon.src = "images/sun.png";
+  icon.src = "sun.png";
   document.body.classList.add("dark-theme");
 }
 
@@ -30,11 +30,11 @@ icon.onclick = function () {
 document.body.classList.toggle("dark-theme");
   if(document.body.classList.contains("dark-theme"))
   {
-    icon.src = "images/sun.png";
+    icon.src = "sun.png";
     localStorage.setItem('myCat','black');
   }
   else{
-    icon.src = "images/moon.png";
+    icon.src = "moon.png";
     localStorage.setItem('myCat','white');
   }
 };
