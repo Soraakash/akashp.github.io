@@ -14,23 +14,22 @@
   <!--Body Of HTML-->
   <body>
     <!--Navigation Bar Div-->  
-    <div class="sidebr">
-      <!-- akash Name-->
-      <div class="akash">
-        <h1><span class="ak">ak</span>ash</h1>
-      </div>
-      <!--Nav Bar-->
+    <div class="akash">
+      <h1><span class="ak">ak</span>ash</h1>
+    </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="testintro.html">About Me</a></li>
-          <li><a href="testwork.html">My Works</a></li>
+        <ul class="mainmenu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/testintro.html">About Me</a></li>
+          <li><a href="/testwork.html">My Works</a></li>
           <!-- <li><a href="/testindex.html">Services</a></li> -->
-          <li><a href="testcontact.html">Contact Me</a></li>
-          <li class="icoon" ><img src="moon.png" id="darkicon"></li>
+          <li><a href="/testcontact.html">Contact Me</a></li>
+          <li class="icoon" ><img src="images/moon.png" id="darkicon"></li>
         </ul>
       </nav>
-    </div>
+      <div class="openmenu"><i class="fa fa-bars"></i></div>
+      <div class="closemenu"><i class="fa fa-times"></i></div>
+    
     <!--Main Content Area-->
     <div class="main">
       <div class="info-container">
@@ -51,16 +50,15 @@
             </p>
           </div>
           <div class="devbuttons">
-            <a href="testcontact.html"><button class="bt1">Contact Me</button></a>
-            <a href="resume.pdf" target="_blank"
+            <a href="/testcontact.html"><button class="bt1">Contact Me</button></a>
+            <a href="/resume.pdf" target="_blank"
               ><button class="bt2">Download CV</button></a
             >
           </div>
         </div>
         <div class="devPic">
-          <img src="akash.png">
-          <div class="pattern">
-            <img src="pattern2.png">
+          <img src="images/new.png" class="myselfimg"/>
+
           </div>
         </div>
       </div>
@@ -68,6 +66,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+      console.log('Hello Index')
+      // localStorage.setItem('myCat', 'white')
       var typed = new Typed(".auto-input", {
         strings: ["Akash Kumar", "Web Developer", "Programmer", "Designer"],
         typeSpeed: 100,
@@ -75,18 +75,7 @@
         loop: true,
       });
 
-      // var icon = document.getElementById("darkicon");
-      // icon.onclick = function () {
-      //   document.body.classList.toggle("dark-theme");
-      //   if(document.body.classList.contains("dark-theme"))
-      //   {
-      //     icon.src = "images/sun.png";
-      //   }
-      //   else
-      //   {
-      //     icon.src="images/moon.png";
-      //   }
-      // };
+      
     </script>
     <script src="index2.js"></script>
   </body>
